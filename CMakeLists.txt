@@ -70,6 +70,10 @@ if(NOT EXISTS "${CMAKE_SOURCE_DIR}/cmake/base.cmake")
   endif()
 endif()
 
+# Required for ROS2
+set(PYTHON_DEB_LAYOUT OFF)
+set(PYTHON_STANDARD_LAYOUT ON)
+
 include("${JRL_CMAKE_MODULES}/boost.cmake")
 include("${JRL_CMAKE_MODULES}/hpp.cmake")
 include("${JRL_CMAKE_MODULES}/apple.cmake")
