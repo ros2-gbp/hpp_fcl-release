@@ -58,10 +58,6 @@ IF(NOT EXISTS "${CMAKE_SOURCE_DIR}/cmake/base.cmake")
   MESSAGE(FATAL_ERROR "\nPlease run the following command first:\ngit submodule update --init\n")
 ENDIF()
 
-# Required for ROS2
-set(PYTHON_DEB_LAYOUT OFF)
-set(PYTHON_STANDARD_LAYOUT ON)
-
 include(cmake/boost.cmake)
 include(cmake/hpp.cmake)
 include(cmake/apple.cmake)
