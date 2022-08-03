@@ -52,15 +52,12 @@ SET(DOXYGEN_USE_TEMPLATE_CSS TRUE)
 # Need to be set before including base.cmake
 # ----------------------------------------------------
 OPTION(INSTALL_DOCUMENTATION "Generate and install the documentation" OFF)
+OPTION(PYTHON_STANDARD_LAYOUT "Enable standard Python package layout" ON)
 
 # Check if the submodule cmake have been initialized
 IF(NOT EXISTS "${CMAKE_SOURCE_DIR}/cmake/base.cmake")
   MESSAGE(FATAL_ERROR "\nPlease run the following command first:\ngit submodule update --init\n")
 ENDIF()
-
-# Required for ROS2
-set(PYTHON_DEB_LAYOUT OFF)
-set(PYTHON_STANDARD_LAYOUT ON)
 
 include(cmake/boost.cmake)
 include(cmake/hpp.cmake)
