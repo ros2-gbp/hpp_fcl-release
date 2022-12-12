@@ -1,4 +1,4 @@
-From fade7a8498e25217d014e2d4d848494a4ebc0727 Mon Sep 17 00:00:00 2001
+From f840cb774c2800c073c45a54fa66e485011094d0 Mon Sep 17 00:00:00 2001
 From: Wolfgang Merkt <w.merkt@gmail.com>
 Date: Sat, 13 Aug 2022 14:18:27 +0100
 Subject: [PATCH] Patch for PYTHON_STANDARD_LAYOUT
