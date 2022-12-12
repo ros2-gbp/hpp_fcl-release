@@ -1,3 +1,26 @@
+## hpp-fcl (foxy) - 2.2.0-1
+
+The packages in the `hpp-fcl` repository were released into the `foxy` distro by running `/usr/bin/bloom-release -r foxy --non-interactive hpp-fcl` on `Mon, 12 Dec 2022 10:36:49 -0000`
+
+The `hpp-fcl` package was released.
+
+Version of package(s) in repository `hpp-fcl`:
+
+- upstream repository: https://github.com/humanoid-path-planner/hpp-fcl.git
+- release repository: https://github.com/ros2-gbp/hpp_fcl-release.git
+- rosdistro version: `2.1.3-1`
+- old version: `2.1.3-1`
+- new version: `2.2.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.11.2`
+- catkin_pkg version: `0.5.2`
+- rosdep version: `0.22.1`
+- rosdistro version: `0.9.0`
+- vcstools version: `0.1.42`
+
+
 ## hpp-fcl (humble) - 2.1.3-1
 
 The packages in the `hpp-fcl` repository were released into the `humble` distro by running `/usr/bin/bloom-release -r humble --non-interactive hpp-fcl` on `Tue, 13 Sep 2022 18:03:30 -0000`
