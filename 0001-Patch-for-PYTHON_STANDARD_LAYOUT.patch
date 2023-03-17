@@ -1,4 +1,4 @@
-From 441e5471a6210efb0d760a9f89e1a3645cd817bb Mon Sep 17 00:00:00 2001
+From 40a1dcf9f7d1c2b671b1db791cf7d77b9f8ed255 Mon Sep 17 00:00:00 2001
 From: Wolfgang Merkt <w.merkt@gmail.com>
 Date: Sat, 13 Aug 2022 14:26:55 +0100
 Subject: [PATCH] Patch for PYTHON_STANDARD_LAYOUT
@@ -8,7 +8,7 @@ Subject: [PATCH] Patch for PYTHON_STANDARD_LAYOUT
  1 file changed, 1 insertion(+)
 
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 3348927..4be3409 100644
+index 73e0231..bed4c2f 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
 @@ -52,6 +52,7 @@ SET(DOXYGEN_USE_TEMPLATE_CSS TRUE)
