@@ -1,4 +1,4 @@
-From b76721f86a8ad513fad2f66845b05acbb57b7f05 Mon Sep 17 00:00:00 2001
+From d462b51f9df54e91a3e3e7b43d9995176b82ded9 Mon Sep 17 00:00:00 2001
 From: Wolfgang Merkt <w.merkt@gmail.com>
 Date: Sat, 13 Aug 2022 14:18:27 +0100
 Subject: [PATCH] Patch for PYTHON_STANDARD_LAYOUT
@@ -8,7 +8,7 @@ Subject: [PATCH] Patch for PYTHON_STANDARD_LAYOUT
  1 file changed, 1 insertion(+)
 
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 73e0231..bed4c2f 100644
+index 58dd41d..5cd719e 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
 @@ -52,6 +52,7 @@ SET(DOXYGEN_USE_TEMPLATE_CSS TRUE)
@@ -20,5 +20,5 @@ index 73e0231..bed4c2f 100644
  # Check if the submodule cmake have been initialized
  IF(NOT EXISTS "${CMAKE_SOURCE_DIR}/cmake/base.cmake")
 -- 
-2.25.1
+2.43.0
 
