@@ -1,3 +1,26 @@
+## hpp-fcl (humble) - 2.4.0-1
+
+The packages in the `hpp-fcl` repository were released into the `humble` distro by running `/tmp/venv/bin/bloom-release --rosdistro humble hpp-fcl` on `Sun, 03 Dec 2023 15:52:37 -0000`
+
+The `hpp-fcl` package was released.
+
+Version of package(s) in repository `hpp-fcl`:
+
+- upstream repository: https://github.com/humanoid-path-planner/hpp-fcl.git
+- release repository: https://github.com/ros2-gbp/hpp_fcl-release.git
+- rosdistro version: `2.3.0-1`
+- old version: `2.3.0-1`
+- new version: `2.4.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.11.2`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.22.2`
+- rosdistro version: `0.9.0`
+- vcstools version: `0.1.42`
+
+
 ## hpp-fcl (iron) - 2.4.0-1
 
 The packages in the `hpp-fcl` repository were released into the `iron` distro by running `/tmp/venv/bin/bloom-release --rosdistro iron hpp-fcl` on `Sun, 03 Dec 2023 15:49:45 -0000`
