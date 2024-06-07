@@ -1,4 +1,4 @@
-From d462b51f9df54e91a3e3e7b43d9995176b82ded9 Mon Sep 17 00:00:00 2001
+From ecc34454a39b1d122b955f47ad91a5697b2b81f4 Mon Sep 17 00:00:00 2001
 From: Wolfgang Merkt <w.merkt@gmail.com>
 Date: Sat, 13 Aug 2022 14:18:27 +0100
 Subject: [PATCH] Patch for PYTHON_STANDARD_LAYOUT
@@ -8,17 +8,17 @@ Subject: [PATCH] Patch for PYTHON_STANDARD_LAYOUT
  1 file changed, 1 insertion(+)
 
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 58dd41d..5cd719e 100644
+index 9a1c88c..3ef89ea 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -52,6 +52,7 @@ SET(DOXYGEN_USE_TEMPLATE_CSS TRUE)
+@@ -50,6 +50,7 @@ SET(DOXYGEN_USE_TEMPLATE_CSS TRUE)
  # Need to be set before including base.cmake
  # ----------------------------------------------------
  OPTION(INSTALL_DOCUMENTATION "Generate and install the documentation" OFF)
 +option(PYTHON_STANDARD_LAYOUT "Enable standard Python package layout" ON)
  
  # Check if the submodule cmake have been initialized
- IF(NOT EXISTS "${CMAKE_SOURCE_DIR}/cmake/base.cmake")
+ set(JRL_CMAKE_MODULES "${CMAKE_CURRENT_LIST_DIR}/cmake")
 -- 
-2.43.0
+2.25.1
 
