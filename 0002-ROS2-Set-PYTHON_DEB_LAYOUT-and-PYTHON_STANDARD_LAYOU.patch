@@ -1,34 +1,24 @@
-From f22807ac9e45adaef842b529d361f67e0fadbf02 Mon Sep 17 00:00:00 2001
+From d621fe5850f375b2e34227cc5c44433319c4cafc Mon Sep 17 00:00:00 2001
 From: Wolfgang Merkt <w.merkt@gmail.com>
 Date: Wed, 3 Aug 2022 10:38:22 +0100
 Subject: [PATCH 2/2] ROS2: Set PYTHON_DEB_LAYOUT and PYTHON_STANDARD_LAYOUT
 
 ---
- CMakeLists.txt | 5 +----
- 1 file changed, 1 insertion(+), 4 deletions(-)
+ CMakeLists.txt | 1 +
+ 1 file changed, 1 insertion(+)
 
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 4ac4e9a..5901701 100644
+index 1f7bda4..b8265d3 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -52,16 +52,13 @@ SET(DOXYGEN_USE_TEMPLATE_CSS TRUE)
+@@ -50,6 +50,7 @@ SET(DOXYGEN_USE_TEMPLATE_CSS TRUE)
  # Need to be set before including base.cmake
  # ----------------------------------------------------
  OPTION(INSTALL_DOCUMENTATION "Generate and install the documentation" OFF)
 +OPTION(PYTHON_STANDARD_LAYOUT "Enable standard Python package layout" ON)
  
  # Check if the submodule cmake have been initialized
- IF(NOT EXISTS "${CMAKE_SOURCE_DIR}/cmake/base.cmake")
-   MESSAGE(FATAL_ERROR "\nPlease run the following command first:\ngit submodule update --init\n")
- ENDIF()
- 
--# Required for ROS2
--set(PYTHON_DEB_LAYOUT OFF)
--set(PYTHON_STANDARD_LAYOUT ON)
--
- include(cmake/boost.cmake)
- include(cmake/hpp.cmake)
- include(cmake/apple.cmake)
+ set(JRL_CMAKE_MODULES "${CMAKE_CURRENT_LIST_DIR}/cmake")
 -- 
-2.43.0
+2.25.1
 
