@@ -50,7 +50,6 @@ SET(DOXYGEN_USE_TEMPLATE_CSS TRUE)
 # Need to be set before including base.cmake
 # ----------------------------------------------------
 OPTION(INSTALL_DOCUMENTATION "Generate and install the documentation" OFF)
-OPTION(PYTHON_STANDARD_LAYOUT "Enable standard Python package layout" ON)
 
 # Check if the submodule cmake have been initialized
 set(JRL_CMAKE_MODULES "${CMAKE_CURRENT_LIST_DIR}/cmake")
@@ -70,10 +69,6 @@ if(NOT EXISTS "${CMAKE_SOURCE_DIR}/cmake/base.cmake")
     FetchContent_GetProperties("jrl-cmakemodules" SOURCE_DIR JRL_CMAKE_MODULES)
   endif()
 endif()
-
-# Required for ROS2
-set(PYTHON_DEB_LAYOUT OFF)
-set(PYTHON_STANDARD_LAYOUT ON)
 
 include("${JRL_CMAKE_MODULES}/boost.cmake")
 include("${JRL_CMAKE_MODULES}/hpp.cmake")
@@ -119,9 +114,9 @@ endif()
 SET_BOOST_DEFAULT_OPTIONS()
 EXPORT_BOOST_DEFAULT_OPTIONS()
 IF(WIN32)
-  ADD_PROJECT_DEPENDENCY(Boost REQUIRED COMPONENTS chrono thread date_time serialization)
+  ADD_PROJECT_DEPENDENCY(Boost REQUIRED COMPONENTS chrono thread date_time serialization filesystem)
 ELSE(WIN32)
-  ADD_PROJECT_DEPENDENCY(Boost REQUIRED chrono serialization)
+  ADD_PROJECT_DEPENDENCY(Boost REQUIRED chrono serialization filesystem)
 ENDIF(WIN32)
 if(BUILD_PYTHON_INTERFACE)
   find_package(Boost REQUIRED COMPONENTS system)
