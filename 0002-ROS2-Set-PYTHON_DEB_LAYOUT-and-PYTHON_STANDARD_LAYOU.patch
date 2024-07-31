@@ -1,4 +1,4 @@
-From d621fe5850f375b2e34227cc5c44433319c4cafc Mon Sep 17 00:00:00 2001
+From ff3dd2f6fa193a13a3814963f79f0a7042a1dd23 Mon Sep 17 00:00:00 2001
 From: Wolfgang Merkt <w.merkt@gmail.com>
 Date: Wed, 3 Aug 2022 10:38:22 +0100
 Subject: [PATCH 2/2] ROS2: Set PYTHON_DEB_LAYOUT and PYTHON_STANDARD_LAYOUT
@@ -8,7 +8,7 @@ Subject: [PATCH 2/2] ROS2: Set PYTHON_DEB_LAYOUT and PYTHON_STANDARD_LAYOUT
  1 file changed, 1 insertion(+)
 
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 1f7bda4..b8265d3 100644
+index d466dfd..cfe2314 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
 @@ -50,6 +50,7 @@ SET(DOXYGEN_USE_TEMPLATE_CSS TRUE)
